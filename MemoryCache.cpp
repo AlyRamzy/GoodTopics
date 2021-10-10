@@ -24,7 +24,7 @@ int main()
         {
             for(int k=0; k<depth; k++)
             {
-                arr(k,j,i) = 1;
+                arr(i,j,k) = 1;
             }
         }
     }
@@ -34,7 +34,7 @@ int main()
 
     auto duration = duration_cast<milliseconds>(stop - start);
   
-    cout << "Time taken by loop while taking into consideration cache: "
+    cout << "Time taken by loop while NOT taking into consideration cache: "
          << duration.count() << " milliseconds" << endl;
 
 
@@ -48,7 +48,7 @@ int main()
         {
             for(int i=0; i<hight; i++)
             {
-                arr(k,j,i) = 1;
+                arr(i,j,k) = 1;
             }
         }
     }
@@ -58,7 +58,7 @@ int main()
 
     duration = duration_cast<milliseconds>(stop - start);
   
-    cout << "Time taken by loop while NOT taking into consideration cache: "
+    cout << "Time taken by loop while taking into consideration cache: "
          << duration.count() << " milliseconds" << endl;
 
     return 0;
