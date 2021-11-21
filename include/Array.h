@@ -32,6 +32,11 @@ namespace nd
             return arr[i + j*width + k*width*hight];
         }
 
+        T& operator [] (int i)
+        {
+            return arr[i];
+        }
+
        bool operator ==(const Array<T>& other) const
 		{
 			if (width != other.width || hight != other.hight || depth != other.depth)

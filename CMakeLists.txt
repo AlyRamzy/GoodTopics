@@ -11,3 +11,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_executable(Cache MemoryCache.cpp)
 add_executable(Branching BranchPrediction.cpp)
+add_executable(SIMD SIMD.cpp)
+
+if(UNIX)
+	target_compile_options(SIMD PRIVATE -msse3 -mavx512f)
+endif()
