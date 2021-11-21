@@ -13,3 +13,6 @@ Run The SIMD.cpp example with compile option -msse3 you can found it in cmake sc
 
 ## Resources 
 1- https://godbolt.org/ converts cpp code to machine assembly code
+2- https://www.intel.com/content/www/us/en/develop/documentation/cpp-compiler-developer-guide-and-reference/top/compiler-reference/libraries/intel-c-class-libraries/c-classes-and-simd-operations.html
+3- https://www.codeproject.com/Articles/874396/Crunching-Numbers-with-AVX-and-AVX
+4- https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#
